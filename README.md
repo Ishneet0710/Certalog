@@ -1,7 +1,7 @@
 # Certalog
 
 #### **Description**:
-Certalog is a website that allows users to ulpoad thier certificates/licenses onto the website. Certalog is a catalog but for certificates so the users are able to see all their certificates at once in a "catalog" like page. This allows them to keep track of important certificates and not lose them. With Certalog, you wouldnt have to go finding for that certificate you need to add to your portfolio.
+Certalog is a website that allows users to upload their certificates/licenses onto the website. Certalog is a catalog but for certificates so the users are able to see all their certificates at once in a "catalog" like page. This allows them to keep track of important certificates and not lose them. With Certalog, you wouldnt have to go finding for that certificate you need to add to your portfolio.
 
 **Aim**: 
 Allow users to keep track of their certificates and maintain them.
