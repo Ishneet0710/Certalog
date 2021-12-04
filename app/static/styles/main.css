@@ -1,0 +1,200 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: "Roboto", serif;
+}
+.img-container {
+  text-align: center;
+  position:absolute;
+  top:25%;
+  left:25%;
+}
+
+body {
+  background-color: white;
+  background-size: cover;
+  width: auto;
+  overflow-x: hidden;
+  font-family: "Roboto", serif;
+  margin: 0px;
+}
+
+footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+section {
+  /* text-align: center; */
+  border-color: black;
+  border-style: solid;
+  background-color: white;
+  margin: 7rem 7rem 7rem 7rem;
+}
+
+form {
+  margin: 3em 3em 3em 3em;
+}
+
+.certContainer {
+  margin: 6%;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.buttonContainer {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+  text-align: center;
+}
+
+.column img {
+  height: 190px;
+  object-fit: cover;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.login-div {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.center-me {
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 45px;
+}
+
+.nav-bar {
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  background-color: #b2ffff;
+  font-family: "Roboto", serif;
+  font-weight: 700 !important;
+  padding-top: 10px;
+}
+
+.footer {
+  text-align: center;
+  width: 100%;
+  height: 2.5rem;
+}
+
+h2 {
+  color: black;
+  font-size: 50px;
+  width: 40%;
+  padding-top: 120px;
+}
+
+h3 {
+  color: black;
+  font-size: 50px;
+  width: 40%;
+}
+
+h5 {
+  color: black;
+  font-size: 25px;
+  width: 70%;
+  padding-top: 50px;
+}
+
+h6 {
+  color: black;
+  font-size: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.floatingcert img {
+  animation: cert 7s linear infinite;
+}
+
+.floatingcert {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+}
+
+.tag {
+  background-color: lightgray;
+  display: flex;
+}
+
+.certImage {
+  float: left;
+  padding-left: 50px;
+}
+
+.column-cert {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row-cert {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@keyframes cert {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-80vh);
+    opacity: 0;
+  }
+}
+
+.search-tag {
+  display: flex;
+  justify-content: center;
+}
+
+.container > img {
+  float: right;
+  padding-bottom: 200px;
+  padding-top: 50px;
+}

@@ -1,0 +1,43 @@
+{% extends 'index.html' %} {% block content %}
+
+<h1 style="text-align: center; position:absolute; top:10%; left:45%;">Your Certificates</h1>
+<div class="search-tag">
+  <div class="child-search-tag">
+    <form style="text-align: center; position:absolute; top:15%; left:42.5%;"
+      action="/search"
+      class="form-inline md-form mr-auto mb-4"
+      method="POST"
+    >
+      <input
+        class="form-control mr-sm-2"
+        type="text"
+        name="tag"
+        placeholder="Search tag"
+        aria-label="SearchTag"
+      />
+      <button class="btn btn-elegant btn-rounded btn-sm my-0" type="submit">
+        Search
+      </button>
+    </form>
+  </div>
+</div>
+
+<br />
+
+<div class="certContainer">
+  <div class="row">
+    {% for cert in certs %}
+    <div class="column">
+      <a href="/{{ cert.id }}">
+        <img
+          style="width: 40%"
+          alt="{{ cert.img_name }}"
+          src="{{ './static/images/' + cert.img_name }}"
+        />
+      </a>
+      <p>{{ cert.title }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

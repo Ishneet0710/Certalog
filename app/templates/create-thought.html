@@ -1,0 +1,67 @@
+{% extends 'index.html' %} {% block content %}
+
+<h1 style="text-align: center; position:absolute; top:10%; left:45%;">Add Certificate</h1>
+<h6 style="text-align: center; position:absolute; top:15%; left:35%;">
+  Just received a new certificate? Add it below so you don't lose it!
+</h6>
+
+<section>
+  <form style="text-align: center; position:absolute; top:25%; left:40%;" action="/upload" enctype="multipart/form-data" method="POST">
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input
+        type="text"
+        class="form-control"
+        name="title"
+        id="title"
+        aria-describedby="title"
+        placeholder="Enter cert title"
+      />
+    </div>
+    <div class="form-group">
+      <label for="author">Issued by</label>
+      <input
+        type="text"
+        class="form-control"
+        name="author"
+        id="author"
+        aria-describedby="author"
+        placeholder="Issuer of cert"
+      />
+    </div>
+    <div class="form-group">
+      <label for="tags">Tags</label>
+      <input
+        type="text"
+        class="form-control"
+        name="tags"
+        id="tags"
+        aria-describedby="tags"
+        placeholder="Enter tags, separated by commas."
+      />
+    </div>
+    <div class="form-group">
+      <label for="img">Certificate</label>
+      <input
+        type="file"
+        class="form-control"
+        name="img"
+        id="img"
+        aria-describedby="certCover"
+      />
+    </div>
+    <div class="form-group">
+      <label for="notes">Comments</label>
+      <textarea
+        class="form-control"
+        name="notes"
+        id="notes"
+        rows="3"
+        placeholder="Write something about the certificate!"
+      ></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</section>
+
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'index.html' %} {% block content %}
+<div class="certContainer">
+  <h1 style="text-align: center">{{ cert.title }}</h1>
+
+  <div class="row-cert">
+    <div class="column-cert">
+      <img
+        class="certImage"
+        style="width: 80%"
+        alt="{{ cert.img_name }}"
+        src="{{ './static/images/' + cert.img_name }}"
+      />
+    </div>
+    <div class="column-cert">
+      <h5>Issued by: {{ cert.author }}</h5>
+      <div class="tags">
+        <b>Tags: </b>
+        {% for tag in cert.tags %}
+        <mark>{{ tag.name }}</mark>
+        {% endfor %}
+      </div>
+      <p><b>Comments:</b> {{ cert.notes }}</p>
+      <p><b>Date Added: {{ cert.date_added }}</b></p>
+
+      <button type="button" onClick="deleteCert({{ cert.id }})">
+        <span aria-hidden="true">Delete</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
