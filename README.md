@@ -8,7 +8,7 @@ Allow users to keep track of their certificates and maintain them.
 
 **Frontend**: HTML, CSS, JS, Bootstrap <br>
 **Backend**: Flask<br>
-**Database**: SQLite3<br>
+**Database**: SQLAlchemy<br>
 **Web Hosting**: Heroku
 
 # Features
