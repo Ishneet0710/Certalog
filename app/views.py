@@ -31,7 +31,7 @@ def home():
 
 @views.route("/create")
 def create_thoughts():
-    return render_template("create-thought.html", user=current_user)
+    return render_template("add.html", user=current_user)
 
 
 @views.route("/success")
