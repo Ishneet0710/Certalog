@@ -14,7 +14,15 @@ button {
   top:25%;
   left:25%;
 }
-
+.img-containers {
+  text-align: center;
+  position:absolute;
+  top:25%;
+  left:47.5%;
+}
+.center-nav {
+  text-align: center;
+}
 body {
   background-color: white;
   background-size: cover;
